@@ -30,6 +30,7 @@
   
     <link rel="stylesheet" href="css/libraries/owl.carousel.min.css">
     <link rel="stylesheet" href="css/libraries/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/loadingAnimation.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
   
     <link rel="stylesheet" href="css/ionicons.min.css">
@@ -46,6 +47,37 @@
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/community.css">
   </head>
+
+<!-- Loading Animation -->
+<div id="loaderAnim">
+  <div class="boxes">
+    <div class="box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div>
+<!--End loading Animation-->
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -195,35 +227,34 @@
                       <source src="upcomingVideoFinal.mp4" type="video/mp4">
                       </video>
                     </div>
-                    <div class="content">
-                      <div class="inner">
-                        <header class="major">
-                          <h1 style="text-decoration: underline;">Upcoming Event</h1>
-                        </header>
-                                              <p>There are many variations of passages of lorem Ipsum available but the new majority have suffered.There are many variations of passages of lorem Ipsum available but the new majority have suffered.There are many variations of passages of lorem Ipsum available but the new majority have suffered.There are many variations of passages of lorem Ipsum available but the new majority have suffered.There are many variations of passages of lorem Ipsum available but the new majority have suffered.There are many variations of passages of lorem Ipsum available but the new majority have suffered.There are many variations of passages of lorem Ipsum available but the new majority have suffered.</p>
-                                              <ul class="actions">
-                          <li><a class="button" onclick="openForm()" style="color: floralwhite;">Register Here</a></li>
-                        </ul>
-                      </div>
-                                          <div class="form-popup" id="myForm">
-                                          <script type="text/javascript">var submitted=false;</script>
-      
-                                          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
-                                           onload="if(submitted) {window.location='https://osdfs.in/ccp.html;'}"></iframe> 
-                                          <form method="post" action="https://docs.google.com/forms/u/6/d/e/1FAIpQLSeJvWasiZDWNz8NJN0CdxnedY_MqhzWSBJU4uA7wo1PcpCQUg/formResponse"target="hidden_iframe" onsubmit="myFunction()"class="form-container">
-                                          <h1 style="text-decoration: underline;">Register</h1>
-                                          <label for="name"><b>Name</b></label>
-                                          <input type="text"  name="entry.1460000172" placeholder="Enter Name"  required>
-                                          <label for="email"><b>Email</b></label>
-                                          <input type="text"  name="entry.1236228512" placeholder="Enter Email"  required>
-                                          <label for="college"><b>College</b></label>
-                                          <input type="text"  name="entry.184290081" placeholder="Enter College" name="college" required>
-                                          <button type="submit" class="btn">Register</button>
-                                          <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
-                                         </form>
-                                         </div>
-                    </div>
-									
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h1 style="text-decoration: underline;">Deep Learning Meetup </h1>
+											</header>
+                                            <p>The aim of this meetup is to bring together people interested in the family of machine learning methods that are concerned with learning distributed, hierarchical ("deep") representations.The format will be based around guest speakers sharing new research ideas and applications covering a wide range of fields from computer vision and natural language processing to autonomous systems and prognostics.Entrepreneurs, working professionals, students, academicians, investors, and just about anyone who is interested in Deep Learning is invited.This Meetup will serve to be an open platform for people to share knowledge, practices, research, applications and critiques of deep learning.If interested, Register now. </p>
+                                            <ul class="actions">
+												<li><a class="button" onclick="openForm()" style="color: floralwhite;">Register Here</a></li>
+											</ul>
+										</div>
+                                        <div class="form-popup" id="myForm">
+                                        <script type="text/javascript">var submitted=false;</script>
+    
+                                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+                                         onload="if(submitted) {window.location='https://osdfs.in/ccp.html;'}"></iframe> 
+                                        <form method="post" action="https://docs.google.com/forms/u/6/d/e/1FAIpQLSeJvWasiZDWNz8NJN0CdxnedY_MqhzWSBJU4uA7wo1PcpCQUg/formResponse"target="hidden_iframe" onsubmit="myFunction()"class="form-container">
+                                        <h1 style="text-decoration: underline;">Register</h1>
+                                        <label for="name"><b>Name</b></label>
+                                        <input type="text"  name="entry.1460000172" placeholder="Enter Name"  required>
+                                        <label for="email"><b>Email</b></label>
+                                        <input type="text"  name="entry.1236228512" placeholder="Enter Email"  required>
+                                        <label for="college"><b>College</b></label>
+                                        <input type="text"  name="entry.184290081" placeholder="Enter College" name="college" required>
+                                        <button type="submit" class="btn">Register</button>
+                                        <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+                                       </form>
+                                       </div>
+									</div>
 								</section>
 </section>
 
@@ -544,6 +575,7 @@ function closeForm() {
   <script src="js/scripts/aos.js"></script>
   <script src="js/scripts/jquery.animateNumber.min.js"></script>
   <script src="js/scripts/scrollax.min.js"></script>
+  <script src="js/removingLoader.js"></script>
   <!-- <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/scripts/google-map.js"></script> -->
